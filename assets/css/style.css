@@ -117,72 +117,6 @@
     font-size: 1.4rem;
 }
 
-/* MENU */
-.overlay {
-    position: fixed;
-    display: none;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: transparent;
-    z-index: 0;
-}
-
-.menu__checkbox:checked~.menu__list,
-.menu__checkbox:checked~.overlay {
-    display: block;
-}
-
-.menu__list {
-    position: fixed;
-    top: var(--header-height);
-    bottom: 0;
-    width: 35vw;
-    background-color: var(--primary-color);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
-    padding-left: 150px;
-    padding-top: 50px;
-    list-style: none;
-    display: none;
-    animation: slideInLeft ease-out .3s;
-    will-change: transform;
-    z-index: 1;
-}
-
-.menu__close-btn {
-    position: absolute;
-    font-size: 24px;
-    top: 12px;
-    right: 0;
-    padding: 4px 10px;
-    color: var(--text-color);
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-.menu__close-btn:hover {
-    background-color: var(--hover-color);
-}
-
-.menu__item-link {
-    padding: 12px 8px 8px;
-    display: block;
-    line-height: 1.2;
-    font-size: 2.2rem;
-    text-decoration: none;
-    color: var(--white-color);
-}
-
-.menu__item-link:hover {
-    background-color: rgb(157, 156, 156);
-    ;
-    color: var(--primary-color);
-    font-weight: 550;
-    padding-left: 12px;
-    transition: all linear .2s;
-}
-
 /* CONTENT */
 .content-section {
     background-color: #616161;
@@ -314,4 +248,5 @@
 .sofware__content__img {
     width: 100%;
     margin-bottom: 16px;
+    border-radius: 8px;
 }

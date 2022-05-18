@@ -1,0 +1,17 @@
+@media (max-width: 739px) {
+    .software-img {
+        height: 400px;
+        margin-bottom: 32px;
+        width: 80%;
+        margin-left: 35px;
+    }
+
+    .software-img:hover {
+        transform: unset;
+        background-color: unset;
+    }
+
+    .download-btn {
+        padding: 40px 32px;
+    }
+}
