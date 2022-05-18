@@ -1,0 +1,317 @@
+.main {
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    height: var(--header-height);
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header__nav {
+    display: block;
+}
+
+.header__nav-list {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.header__nav-item {
+    position: relative;
+}
+
+.header__nav-item-link {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header__nav-item-link:hover .facebook-mini-page {
+    display: block;
+}
+
+.header__nav-item-link i {
+    font-size: 2.6rem;
+    padding: 19px;
+}
+
+.header__name-page {
+    display: block;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.header__name-page:hover {
+    background-color: var(--hover-color);
+    transition: all linear .3s;
+}
+
+.header__nav-item-link:hover i {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    transition: all linear .1s;
+}
+
+/* FB mini page */
+.facebook-mini-page {
+    position: absolute;
+    top: calc(100% + 15px);
+    left: calc(50% - 80px);
+    width: 160px;
+    background-color: var(--white-color);
+    min-height: 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+    padding-bottom: 20px;
+    display: none;
+    animation: topScaleDown ease .3s;
+    transform-origin: top center;
+}
+
+.facebook-mini-page::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    display: block;
+    width: 100%;
+    height: 15px;
+    background-color: transparent;
+}
+
+.facebook_background {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+}
+
+.facebook__img {
+    width: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.facebook__name {
+    text-align: center;
+    margin-top: -24px;
+    color: var(--black-color);
+    font-size: 1.4rem;
+}
+
+/* MENU */
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.menu__checkbox:checked~.menu__list,
+.menu__checkbox:checked~.overlay {
+    display: block;
+}
+
+.menu__list {
+    position: fixed;
+    top: var(--header-height);
+    bottom: 0;
+    width: 35vw;
+    background-color: var(--primary-color);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+    padding-left: 150px;
+    padding-top: 50px;
+    list-style: none;
+    display: none;
+    animation: slideInLeft ease-out .3s;
+    will-change: transform;
+    z-index: 1;
+}
+
+.menu__close-btn {
+    position: absolute;
+    font-size: 24px;
+    top: 12px;
+    right: 0;
+    padding: 4px 10px;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.menu__close-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.menu__item-link {
+    padding: 12px 8px 8px;
+    display: block;
+    line-height: 1.2;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.menu__item-link:hover {
+    background-color: rgb(157, 156, 156);
+    ;
+    color: var(--primary-color);
+    font-weight: 550;
+    padding-left: 12px;
+    transition: all linear .2s;
+}
+
+/* CONTENT */
+.content-section {
+    background-color: #616161;
+    padding-top: calc(var(--header-height) + 64px);
+    padding-bottom: 200px;
+    color: var(--text-color);
+}
+
+.software-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 20px;
+    filter: grayscale(20%);
+    background-color: rgb(118, 121, 118);
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.software-img:hover {
+    transform: scale(1.05);
+    transition: all ease .5s;
+    box-shadow: 0 8px 20px 0 rgb(0 0 0 / 40%), 0 8px 30px 0 rgb(0 0 0 / 39%);
+}
+
+.software__info {
+    font-size: 1.8rem;
+    margin-left: 8px;
+}
+
+.software__name {
+    font-size: 3rem;
+    margin: 10px 0 10px;
+    color: #66BB6A;
+}
+
+.software__version {}
+
+.software__tag {
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+}
+
+.software__tag-name {
+    font-size: 1.5rem;
+    padding: 4px 4px;
+    margin-right: 16px;
+    color: #fff;
+    border-radius: 4px;
+    user-select: none;
+    box-shadow: 4px 0 0 rgba(0, 0, 0, .25);
+}
+
+.software__tag-name:hover {
+    transform: translateY(-2px);
+    transition: all linear .2s;
+}
+
+.software__size {
+    font-size: 1.5rem;
+    margin: 10px 0 10px;
+}
+
+.software__tag-name:nth-last-of-type(3n+1) {
+    background-color: #5C6BC0;
+}
+
+.software__tag-name:nth-last-of-type(3n+2) {
+    background-color: #2ECC71;
+}
+
+.software__tag-name:nth-last-of-type(3n+3) {
+    background-color: #3498DB;
+}
+
+.software__description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.sofware__description-item {
+    margin-bottom: 5px;
+}
+
+.download-section {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.download-btn {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    transition: all ease .4s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+}
+
+.download-btn i {
+    margin-right: 8px;
+}
+
+.software__content {
+    margin-top: 40px;    
+}
+
+.software__content-split {
+    display: block;
+    width: 100%;
+    border-top: 2px solid #ddd;
+    font-size: 2rem;
+    padding-top: 16px;
+    margin-bottom: 24px;
+}
+
+.sofware__content__img {
+    width: 100%;
+    margin-bottom: 16px;
+}
