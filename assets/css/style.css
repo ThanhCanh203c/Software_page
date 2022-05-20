@@ -206,12 +206,13 @@
 .download-section {
     margin-top: 50px;
     width: 100%;
+    text-align: center;
 }
 
 .download-btn {
     background-color: var(--primary-color);
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,6 +231,7 @@
 
 .download-btn i {
     margin-right: 8px;
+    font-size: 1.8rem;
 }
 
 .software__content {
