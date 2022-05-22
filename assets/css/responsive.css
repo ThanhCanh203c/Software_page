@@ -1,4 +1,8 @@
 @media (max-width: 739px) {
+    .main {
+        overflow: hidden;
+    }
+
     .software-img {
         height: 400px;
         margin-bottom: 32px;
@@ -13,5 +17,18 @@
 
     .download-btn {
         padding: 40px 32px;
+    }
+
+    .content-section {
+        padding: calc(var(--header-height) + 16px) 8px;
+    }
+
+    .software__header {
+        padding: 0 8px;
+
+    }
+
+    .hide-on-mobile {
+        display: none;
     }
 }
