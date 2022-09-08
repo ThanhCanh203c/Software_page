@@ -36,6 +36,7 @@
     color: var(--text-color);
     text-decoration: none;
     cursor: pointer;
+    transition: all linear .1s;
 }
 
 .header__nav-item-link:hover .facebook-mini-page {
@@ -51,17 +52,16 @@
     display: block;
     padding: 12px;
     border-radius: 50px;
+    transition: all linear .3s;
 }
 
 .header__name-page:hover {
     background-color: var(--hover-color);
-    transition: all linear .3s;
 }
 
 .header__nav-item-link:hover i {
     background-color: var(--hover-color);
     color: var(--text-color);
-    transition: all linear .1s;
 }
 
 /* FB mini page */
@@ -134,11 +134,11 @@
     filter: grayscale(20%);
     background-color: rgb(118, 121, 118);
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    transition: all ease .5s;
 }
 
 .software-img:hover {
     transform: scale(1.05);
-    transition: all ease .5s;
     box-shadow: 0 8px 20px 0 rgb(0 0 0 / 40%), 0 8px 30px 0 rgb(0 0 0 / 39%);
 }
 
@@ -169,11 +169,11 @@
     border-radius: 4px;
     user-select: none;
     box-shadow: 4px 0 0 rgba(0, 0, 0, .25);
+    transition: all linear .2s;
 }
 
 .software__tag-name:hover {
     transform: translateY(-2px);
-    transition: all linear .2s;
 }
 
 .software__size {
@@ -221,11 +221,11 @@
     text-decoration: none;
     color: var(--text-color);
     box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    transition: all ease .4s;
 }
 
 .download-btn:hover {
     transform: translateY(-2px);
-    transition: all ease .4s;
     box-shadow: 0 0 8px rgba(0, 0, 0, .3);
 }
 
@@ -251,11 +251,11 @@
     width: 100%;
     margin-bottom: 16px;
     border-radius: 8px;
+    transition: all ease .25s;
 }
 
 .sofware__content__img:hover {
     transform: scale(1.05);
-    transition: all ease .25s;
     box-shadow: 0 0 20px rgba(0, 0, 0, .3);
     
 }
